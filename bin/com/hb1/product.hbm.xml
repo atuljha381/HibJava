@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class  name="com.hib1.Product" table="product">
+<meta attribute="class-description">This class contains Product details.</meta>
+	<id name="prodid" type="int" column="prod_id" />
+	<property name="prodname" column="prod_name" type="string"/>
+	<property name="cost" column="cost" type="integer"/>
+	<property name="qty" column="quantity" type="integer"/>
+</class>
+</hibernate-mapping>
