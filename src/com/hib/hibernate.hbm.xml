@@ -2,4 +2,12 @@
 <!DOCTYPE hibernate-mapping PUBLIC
  "-//Hibernate/Hibernate Mapping DTD//EN"
  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class  name="com.hib.Person" table="Person">
+<meta attribute="class-description">This class contains person details.</meta>
+	<id name="pid" type="int" column="pid" />
+	<property name="pname" column="pname" type="string"/>
+	<property name="pjob" column="pjob" type="string"/>
+</class>
+</hibernate-mapping>
  
